@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="true" enabled="true" name="SC-TMXService">
+    <DisplayName>SC-TMXService</DisplayName>
+    <Request clearPayload="true" variable="TMXRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Timeout>60000</Timeout>
+    <Response>TMXResponse</Response>
+    <HTTPTargetConnection>
+        <Properties>
+            <Property name="keepalive.timeout.millis">14800</Property>
+        </Properties>
+        <LoadBalancer>
+            <Server name="tmxbackend"/>
+        </LoadBalancer>
+    </HTTPTargetConnection>
+</ServiceCallout>

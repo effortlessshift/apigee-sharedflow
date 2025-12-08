@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>AM-SetFlowVariable</Name>
+    </Step>
+    <!--Step>
+        <Name>KVM-PredictLite</Name>
+    </Step-->
+    <Step>
+        <Name>LC-OAuthToken</Name>
+    </Step>
+    <Step>
+        <Name>Predict-GetToken</Name>
+        <Condition>cache.apiAccessToken = null or cache.apiAccessToken = '' or PreditErrorStatusCode = 401</Condition>
+    </Step>
+    <Step>
+        <Name>RF-Err404-TargetNotFound</Name>
+        <Condition>OAuthResponse.status.code GreaterThanOrEquals 299</Condition>
+    </Step>
+    <Step>
+        <Name>EV-OandOOAuthResponse</Name>
+        <Condition>OAuthResponse != ''</Condition>
+    </Step>
+    <Step>
+        <Name>PC-PredictApiToken</Name>
+        <Condition>OAuthResponse != ''</Condition>
+    </Step>
+</SharedFlow>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-DnCargo-Logging">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255552679</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>Prepared Logs messages for CSOC RBAAuditing CLE etc</Description>
+    <DisplayName>EK-DnCargo-Logging</DisplayName>
+    <LastModifiedAt>1757255552679</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:9c5eab24ffcd5e31472b3b1a507614ce2398f8f6047317d3059abc5f7106ba97d4e6edbf49846f1c98bdcc2f8cbc3c9174dd9f18b582d99d708ed7d83bfbc147:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>JS-PrepareLogMessage</Policy>
+        <Policy>KVM_LogConfigs</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-PrepareLogMessage.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

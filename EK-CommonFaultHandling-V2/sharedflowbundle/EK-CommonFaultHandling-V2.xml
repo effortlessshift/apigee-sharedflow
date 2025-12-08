@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-CommonFaultHandling-V2">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255365417</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>This shared flow is used to handle the generic Faults</Description>
+    <DisplayName>EK-CommonFaultHandling</DisplayName>
+    <LastModifiedAt>1757255365417</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:7ff261572bb68091dd0386d5948c1b7b43a5bed7def79683f03d937292d5b37056d0a12c30444e9caf293e95303fddd902d1664ce77f47f3cc765c58c9e555c0:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-Err400-BadRequest</Policy>
+        <Policy>AM-Err401-InvalidClient</Policy>
+        <Policy>AM-Err401-InvalidProduct</Policy>
+        <Policy>AM-Err401-InvalidToken</Policy>
+        <Policy>AM-Err429-QuotaLimit</Policy>
+        <Policy>AM-Err429-SpikeArrest</Policy>
+        <Policy>AM-Err503-ServiceUnavailable</Policy>
+        <Policy>AM-Err520-InternalError</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

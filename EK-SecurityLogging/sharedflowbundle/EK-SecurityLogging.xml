@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-SecurityLogging">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255678879</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>Splunk logging and XML/SQL injection threat protection</Description>
+    <DisplayName>SecurityLoggingandThreatProtection</DisplayName>
+    <LastModifiedAt>1763895865127</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:0447b0176d73c7bed981862c84b0453054fea3e8bfbbad1f60d8e0883b09d1a8c34a93c20ac195c9ffc10473a8212661ddca3d52c8b1190f273229681bcce728:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AccessControl</Policy>
+        <Policy>RegularExpressionProtection</Policy>
+        <Policy>SC-Splunk</Policy>
+        <Policy>XMLThreatProtection</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

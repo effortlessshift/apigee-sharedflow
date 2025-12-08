@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>AM-Err520-InternalError</Name>
+        <Condition>
+             (fault.name = "ExecutionFailed") or 
+            (error.status.code GreaterThanOrEquals 500) 
+    
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err503-ServiceUnavailable</Name>
+        <Condition>
+            (error.message matches "*ServiceCallout*") 
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err429-SpikeArrest</Name>
+        <Condition>
+            (fault.name = "SpikeArrestViolation") or  
+            (fault.name = "InvalidMessageWeight" ) or 
+            (fault.name = "ErrorLoadingProperties" ) or 
+            (fault.name = "InvalidAllowedRate" ) or 
+            (fault.name = "FailedToResolveSpikeArrestRate" )
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err429-QuotaLimit</Name>
+        <Condition> (fault.name = "QuotaViolation") </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err401-InvalidToken</Name>
+        <Condition>
+            (fault.name="access_token_expired") or 
+            (fault.name="invalid_access_token") or 
+            (fault.name="InvalidAccessToken")
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err401-InvalidProduct</Name>
+        <Condition>
+            (fault.name="InvalidAPICallAsNoApiProductMatchFound")
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err401-InvalidClient</Name>
+        <Condition>
+            (fault.name = "ApiKeyNotApproved") or 
+            (fault.name = "CompanyStatusNotActive") or 
+            (fault.name = "DeveloperStatusNotActive") or 
+            (fault.name = "FailedToResolveAPIKey") or 
+            (fault.name = "InvalidApiKey") or  
+            (fault.name = "InvalidApiKeyForGivenResource") or 
+            (fault.name = "app_not_approved") 
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err400-BadRequest</Name>
+        <Condition>
+             (fault.name = "InvalidJSONPath") or 
+            (fault.name = "IPDeniedAccess") or 
+            (error.message matches "*JSONThreatProtection*") or 
+            (error.message matches "*XMLThreatProtection*") or 
+            (error.message matches "*RegularExpressionProtection*")
+        </Condition>
+    </Step>
+</SharedFlow>

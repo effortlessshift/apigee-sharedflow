@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-Err400-BadRequest" version="SHA-512:26acad773dc988476c5839365b0f7db9a6aa0c787e95948e7706fa5e82b0d2e8f36080be3d2f228516739bfdfe0a54d1ffd77b09bf5113c630d5ae9cfe36969b"/>
+        <VersionInfo resourceName="AM-Err401-InvalidToken" version="SHA-512:5a7c485030b5bc707054f5a84b61e01f2a6b81cef0792f455fa734f15117e8ac3081ebc860dd97d93c8a618f009da708ff184c96b2f434d2c256c0a7c8556c60"/>
+        <VersionInfo resourceName="AM-Err404-InvalidResource" version="SHA-512:72d1beffe9537f5908f889a246ad318c664fb062550dbbfff0861eb0aca927cf42027a39b26cc5fa67afc684a01b897051c3152cce66debc6f471981cde50747"/>
+        <VersionInfo resourceName="AM-Err500-OtherHTTPStatusCode" version="SHA-512:007949a48b53f5ad59d0134472cd160d53033144cd3fbc96728714c15cd914968974dd57ab4cd5832166188e694aafb3dda42931423b1276967547979a5e91c8"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:02308fd43907c0abc25c3e28f46dda243351476458343d6bb8dadc71342ca545ed8464e6a02a1d6cf03c2dd6fe7cd176ba06d9efcc473c8f1eb85957ed584ae0"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

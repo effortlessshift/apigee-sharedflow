@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-SF-PreProxy">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255752229</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>Preproxy shared flow to be attached as Flow hook</Description>
+    <DisplayName>EK-SF-PreProxy</DisplayName>
+    <LastModifiedAt>1757255752229</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:058dfe726596f4e1149fddab974bb17ca37bcd7dcd0fbf3f634fa4e214b7674df986a9a13ebed9b1c74057b2cb8ddf335c61626dc577d3e70fb668979fbbaf8c:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-SetLogVars-Preproxy</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

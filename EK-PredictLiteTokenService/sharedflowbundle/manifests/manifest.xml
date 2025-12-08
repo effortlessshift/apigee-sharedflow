@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-SetFlowVariable" version="SHA-512:7e983f693828b15a5abf4455769ed2aa3c124a7e932e839c9d4419b27356dca009226c13c7217f986753a3d62445f763cf11cd40898299b53452eebfbbbcd637"/>
+        <VersionInfo resourceName="EV-OandOOAuthResponse" version="SHA-512:90571595b94535cbf91a48efa3aebddef7f039c5eb99aa40d8ddb7936bd40881a875e11e18607245d3c6ed3ed38533f4dc27f463301632af5886bc195be2088b"/>
+        <VersionInfo resourceName="KVM-PredictLite" version="SHA-512:86e9393dc58236ff2ddfa6a490b02ed39ef93428add1e319103b585b3c6b62042db8ef08ee72dd55d1b7bb8bbd7a5e626b016e7d5493de63867e37fbb58bc147"/>
+        <VersionInfo resourceName="LC-OAuthToken" version="SHA-512:da3dbebf598bdcc3ba605a0442d32f9b0eb126ef18456868c57442e9bb94ecdc03a55e363a8744c2e5daa3e1825a8e3a60aa6ecd113e45d7367cbac2f4dbbd89"/>
+        <VersionInfo resourceName="PC-PredictApiToken" version="SHA-512:788e9f6bc818eb8d357b7dff6da8ca32f29e1a67b100bd6ddb6b9f1887886e1f862441953257604775f01ee6031f7461dc3a4fff6ddbd9afa9a6f60958bbb613"/>
+        <VersionInfo resourceName="Predict-GetToken" version="SHA-512:56f117a7c2445b98f5f362541a531d1647cb9ddc81aa5ad510ae793d80a935474d00d9f92cdad225fd84efc1de638d13df383d0c29bb3380a94d31a62ac69e91"/>
+        <VersionInfo resourceName="RF-Err404-TargetNotFound" version="SHA-512:d48401d412a01e54e5030c5e71d1188976a9a05c81c9a3391e8186cd39fa25c5b866ae6d8168045cf2d3407ab9e6c02b5916b8d3ae406cb45e82dfbb675e1b96"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-TokenExtraction.js" version="SHA-512:877990894e40a67f58bea3b888bd922a9e1ec1e6eb8983bc3fd60ff5cb04e4786552b302738300d1b1563466477c287ef7fbd2c015275aab8086de062322bf8d"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:49652c6bb432d43480f519e76c5aa803849fb20626e97aa079bc6d8815767b0086516f1b4018824f2ce792848a944d10fe116f60fa416c68b6866fc6e1093ddc"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

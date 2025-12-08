@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-Err400-BadRequest" version="SHA-512:2ee9a42cb4657656538cdd6268b54d0280f8d9e0516749725ce9fece1b8eeb505e4d80a004b337438119bb6674acdf52b727fe5db2c2b314973bc572651c5fe1"/>
+        <VersionInfo resourceName="AM-Err401-InvalidClient" version="SHA-512:86f43814bf132c0677752d9c6cfaa454a1ca1d6c68469a7a4e4c37ce63a32267aeac9b48765d0eb0abee2f9a941bfd7b23c51669d38e42ce5a71db44d81e2b48"/>
+        <VersionInfo resourceName="AM-Err401-InvalidProduct" version="SHA-512:0bf6e123cdc3a6d083254be0ad4a081e427ba1dd6f7f59a1b3485a812e4cf9311e3b1b01cb381ab21082c9c9e031dfc1baba54cdb2f620cbc61fa49430d7e9c7"/>
+        <VersionInfo resourceName="AM-Err401-InvalidToken" version="SHA-512:3f9c7df5af29d58352abe5efae1ae83f20a8338c2f282b70627e29d2f273f3c3abbb9e9335f84cd9ba427e947a23ec13289012eaf256b5112f2c5d871bd8163e"/>
+        <VersionInfo resourceName="AM-Err429-QuotaLimit" version="SHA-512:2647801024052ca44ca234b4610f2faf043d28e422797de95f33491faf5fb7dce4f4939ce27b0dc88233bd3022a861c54d68d256d8b1142732e6ed24bfe1f9c0"/>
+        <VersionInfo resourceName="AM-Err429-SpikeArrest" version="SHA-512:67e63fe60fd4de1bd3bed42dae440a6b81885c26ad3560ac3bec91b53bfbc3f093835bf9f655230ce278def822a69f36f2bfe477334b03a4577e2f81f8a06746"/>
+        <VersionInfo resourceName="AM-Err503-ServiceUnavailable" version="SHA-512:8e91ea3b5d3fe55a639d07e8ed44f168db5f2de5d6d4c248b82e28a8b9c7d3e15f0161361ad8b4a45e64009eab43d4906bfa1342e2a647152c02c625c7ca8ee7"/>
+        <VersionInfo resourceName="AM-Err520-InternalError" version="SHA-512:29fe5ff4ae480a97fa760b1a8025ab49e0ffa9260249c206211034728c44a3e03ad1c4d08b49960d572f78786b30070ec707507a7f16c73993373719d3a67491"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:619ecdf26cfdf510cbbcdd9f6ae1e6be30e8f965396e769a3433c62b52e4314bbdc68bd04d2a6bc346c07d889cc7ed06d90b46dd29aad7f2d773d2a589afef21"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

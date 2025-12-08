@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-AccuityTokenService">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255333441</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>Fetches the Auth Token from accuity and loads into the cache</Description>
+    <DisplayName>EK-AccuityTokenService</DisplayName>
+    <LastModifiedAt>1763893220248</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:65adc8d918d17b08abe85ae831398d4b17c5c7eda1e19ae3bd6415aab78e61e3841756ecb90c72ad0351ba079125f4db29cf4eb0bdd138f05e57b50147970830:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-SetFlowVariable</Policy>
+        <Policy>Accuity-GetToken</Policy>
+        <Policy>EV-AccuityAuthResponse</Policy>
+        <Policy>KVM-Accuity</Policy>
+        <Policy>LC-OAuthToken</Policy>
+        <Policy>PC-AccuityApiToken</Policy>
+        <Policy>RF-Err404-TargetNotFound</Policy>
+        <Policy>SC-RequestID</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-TokenExtraction.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-PredictLiteTokenService">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255636676</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>EK-PredictLiteTokenService</DisplayName>
+    <LastModifiedAt>1763894550586</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:9ddd69464f677ab4f70a3d48d912d345d658c208e70b3f55860b0932bd9b9362626e523c146e9221c1c4c49b283b18990d814d83dd56425ed628839161ed45e3:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-SetFlowVariable</Policy>
+        <Policy>EV-OandOOAuthResponse</Policy>
+        <Policy>KVM-PredictLite</Policy>
+        <Policy>LC-OAuthToken</Policy>
+        <Policy>PC-PredictApiToken</Policy>
+        <Policy>Predict-GetToken</Policy>
+        <Policy>RF-Err404-TargetNotFound</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-TokenExtraction.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="true" continueOnError="true" enabled="false" name="SC-Splunk">
+    <DisplayName>SC-Splunk</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="splunkRequest">
+        <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+        <Set>
+            <Headers>
+                <Header name="Authorization">Splunk 850043CE-583C-4FFF-9534-AE2AA8FF1552</Header>
+            </Headers>
+            <Payload contentType="application/json">
+				{"event": {"organization": "{organization.name}","environment": "{environment.name}","proxyName": "{apiproxy.name}","proxyRevision": "{apiproxy.revision}","userAgent": "{request.header.user-agent}",	"clientIp":"{request.header.x-forwarded-for}","requestParams": "{request.querystring}","timestamp": "{system.time}","region": "{system.region.name}"}}
+			</Payload>
+            <Verb>POST</Verb>
+        </Set>
+    </Request>
+    <LocalTargetConnection>
+        <Path>/v1/async/logs/splunk/security</Path>
+    </LocalTargetConnection>
+</ServiceCallout>

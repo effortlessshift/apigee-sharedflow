@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM_LogConfigs" mapIdentifier="KVM_LogConfigs">
+    <DisplayName>KVM_LogConfigs</DisplayName>
+    <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
+    <Get assignTo="ProxyLogKVM" index="1">
+        <Key>
+            <Parameter ref="apiproxy.name"/>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

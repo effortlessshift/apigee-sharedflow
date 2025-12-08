@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-TargetFaultHandling">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255804204</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>EK-TargetFaultHandling</DisplayName>
+    <LastModifiedAt>1757255804204</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:68a8cba04f781f9cc09412f5c88ff1e8e09f8caa93b0cfb0c2b192ba4866722ef9b2a554046688fc34b0014bc79f9b12f2cf2bb927cbffd8dc6ce7c5be079a9b:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-Err400-BadRequest</Policy>
+        <Policy>AM-Err401-InvalidToken</Policy>
+        <Policy>AM-Err404-InvalidResource</Policy>
+        <Policy>AM-Err500-OtherHTTPStatusCode</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

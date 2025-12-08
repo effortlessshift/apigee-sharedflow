@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="SC-RequestID">
+    <DisplayName>SC-RequestID</DisplayName>
+    <Properties/>
+    <Statistics>
+        <Statistic name="ClientRequestId" ref="sourceMessageId" type="string">NA</Statistic>
+        <Statistic name="ResourceName" ref="currentFlowName" type="string">NotDefined</Statistic>
+    </Statistics>
+</StatisticsCollector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>SC-Splunk</Name>
+    </Step>
+    <Step>
+        <Name>XMLThreatProtection</Name>
+    </Step>
+</SharedFlow>

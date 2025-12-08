@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Err400-BadRequest">
+    <DisplayName>AM-Err400-BadRequest</DisplayName>
+    <AssignVariable>
+        <Name>flow.errorCode</Name>
+        <Value>500</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSystem</Name>
+        <Ref>flow.system</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSuffix</Name>
+        <Value>400</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSummary</Name>
+        <Value>Internal Error</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorMessage</Name>
+        <Value>Request is wrong</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.dynamicErrorMessage</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.statusCode</Name>
+        <Value>500</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.reasonPhrase</Name>
+        <Value>Internal Server Error</Value>
+    </AssignVariable>
+</AssignMessage>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-MFAResponse">
+    <DisplayName>RF-MFAResponse</DisplayName>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">
+          {MFAResponse}
+         </Payload>
+            <StatusCode>200</StatusCode>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

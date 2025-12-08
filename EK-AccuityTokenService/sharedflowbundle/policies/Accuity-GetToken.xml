@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="Accuity-GetToken">
+    <DisplayName>Accuity-GetToken</DisplayName>
+    <Properties/>
+    <Request clearPayload="true">
+        <Set>
+            <Headers>
+                <Header name="Content-Type">application/x-www-form-urlencoded</Header>
+                <!--Header name="Content-Type">application/x-www-form-urlencoded</Header>-->
+				<Header name="Authorization">Basic {appProduct.AccuityAuth}</Header>
+                <!--<Header name="Authorization">Basic {private.KVMAuthorization}</Header>-->
+                <!--<Header name="Authorization">Basic RHViYWlJVDpBZG1pbkAyMDI0</Header>
+                <Header name="Authorization">Basic QWNjdWl0eURldjpEZXZBZG1AMjAyNA==</Header>-->
+            </Headers>
+            <Verb>POST</Verb>
+        </Set>
+        <Add>
+            <FormParams>
+                <FormParam name="grant_type">client_credentials</FormParam>
+                <!--   <FormParam name="scope">write</FormParam>-->
+            </FormParams>
+        </Add>
+        <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>OAuthResponse</Response>
+    <Timeout>60000</Timeout>
+    <HTTPTargetConnection>
+        <Properties>
+            <Property name="success.codes">2xx,4xx</Property>
+        </Properties>
+        <LoadBalancer>
+            <!--<Server name="OandObackend"/>-->
+            <Server name="ekf5backend"/>
+        </LoadBalancer>
+        <!--<Path>/api/iam/oauth/token</Path>-->
+        <Path>{environment.name}/accuity/AuthServer/oauth/token</Path>
+        <!--Path>{environment.name}/skycargo/api/iam/oauth/token</Path-->
+    </HTTPTargetConnection>
+</ServiceCallout>

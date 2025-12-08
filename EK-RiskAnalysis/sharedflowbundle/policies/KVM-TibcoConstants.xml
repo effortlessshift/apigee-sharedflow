@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-TibcoConstants" mapIdentifier="KVM_TibcoConstants">
+    <DisplayName>KVM-TibcoConstants</DisplayName>
+    <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
+    <Get assignTo="CRISAPIKey" index="1">
+        <Key>
+            <Parameter>CRISAPIKey</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

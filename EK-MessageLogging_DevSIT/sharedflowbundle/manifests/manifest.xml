@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="JS-PrepareLogMessage" version="SHA-512:d5bf38d23500e3268c5987b2b5bc393cea2f9966419074b3b445d7911f475d0afa2d41d54f4614418e84ef9222a7546b40a10a5264b61b6d78966c51ec954bf5"/>
+        <VersionInfo resourceName="KVM_LogConfigs" version="SHA-512:dbd446858332016268346f24373383bcdfdc577b54507fc7284e0b6bda68cb8d2fc03a8678467556c7665ef92566c6167f64e7d91f7df93adf67f1f637ef9e06"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-PrepareLogMessage.js" version="SHA-512:6f8e4ef2500225e8d44e2c20eef6d985e4a434b05a0011641fb276bdaed5464dd6c9a9495618d26237c0d9cafb9dc8b5e82f0fd0c9e3752514484c390a54c7cd"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:a27252d85694190d3411f456c0f4dbbe741fb208e19ed9d8be2f5729ee75bed923c79efb9eb4c7806a6e06798f651b2c77d67b05a2675eb9d500c98bbf985e5b"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

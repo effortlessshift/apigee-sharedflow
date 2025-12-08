@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XMLThreatProtection async="false" continueOnError="false" enabled="true" name="XMLThreatProtection">
+    <DisplayName>XMLThreatProtection</DisplayName>
+    <Properties/>
+    <StructureLimits>
+        <NodeDepth>0</NodeDepth>
+        <AttributeCountPerElement>0</AttributeCountPerElement>
+        <NamespaceCountPerElement>0</NamespaceCountPerElement>
+        <ChildCount includeComment="true" includeElement="true" includeProcessingInstruction="true" includeText="true">3</ChildCount>
+    </StructureLimits>
+</XMLThreatProtection>

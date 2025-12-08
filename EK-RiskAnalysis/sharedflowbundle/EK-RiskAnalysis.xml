@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-RiskAnalysis">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255717413</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>CLELibrary</DisplayName>
+    <LastModifiedAt>1757255717413</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:4d42f19d60423b02cc89c4ee0a98843f2fae73be13cd112cac6c801e0ef7a1035fac92f45c970b511918cb0aa2f8c9cedbfd603055b75b42c31ed11db54de5b4:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-AddCORFormParam</Policy>
+        <Policy>AM-CreateRequest-RBAAudit</Policy>
+        <Policy>AM-RBARetrieveDynamicProf</Policy>
+        <Policy>EV-ExtractResponse-ProfileDynamicSumm</Policy>
+        <Policy>EV-ExtractResponse-SearchTMX</Policy>
+        <Policy>JS-CreateMFAResponse</Policy>
+        <Policy>JS-CreateRBARequest</Policy>
+        <Policy>KVM-TibcoConstants</Policy>
+        <Policy>RF-Err400-BadRequest</Policy>
+        <Policy>RF-Err400-ChallengePending</Policy>
+        <Policy>RF-Err400-ProfileAssessmentFail</Policy>
+        <Policy>RF-MFAResponse</Policy>
+        <Policy>SC-OktaFactorsList</Policy>
+        <Policy>SC-RBARetrieveDynamicProfileRequest</Policy>
+        <Policy>SC-TMXService</Policy>
+        <Policy>SC-TibcoRBAAuditService</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-CreateMFAResponse.js</Resource>
+        <Resource>jsc://JS-CreateRBARequest.js</Resource>
+        <Resource>jsc://PrepareLogMessage.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

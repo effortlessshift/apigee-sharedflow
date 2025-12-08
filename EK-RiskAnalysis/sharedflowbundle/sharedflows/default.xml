@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>KVM-TibcoConstants</Name>
+    </Step>
+    <Step>
+        <Name>AM-RBARetrieveDynamicProf</Name>
+        <Condition>isCORRequired="YES"</Condition>
+    </Step>
+    <Step>
+        <Name>SC-RBARetrieveDynamicProfileRequest</Name>
+        <Condition>isCORRequired="YES"</Condition>
+    </Step>
+    <Step>
+        <Name>EV-ExtractResponse-ProfileDynamicSumm</Name>
+        <Condition>isCORRequired="YES"</Condition>
+    </Step>
+    <Step>
+        <Name>AM-AddCORFormParam</Name>
+        <Condition>isCORRequired="YES" and countryOfResidence!=''</Condition>
+    </Step>
+    <Step>
+        <Name>SC-TMXService</Name>
+    </Step>
+    <!--Step>
+        <Name>PrepareLogMessage</Name>
+    </Step>
+    <Step>
+        <Name>RBALog</Name>
+    </Step-->
+    <Step>
+        <Name>EV-ExtractResponse-SearchTMX</Name>
+        <Condition>TMXResponse.content!=''</Condition>
+    </Step>
+	 <Step>
+        <Name>JS-CreateRBARequest</Name>
+        <Condition>TMXResponse.content!=''</Condition>
+    </Step>
+    <Step>
+        <Name>AM-CreateRequest-RBAAudit</Name>
+        <Condition>TMXRequest.content!=''</Condition>
+    </Step>
+    <Step>
+        <Name>SC-TibcoRBAAuditService</Name>
+        <Condition>TMXRequest.content!=''</Condition>
+    </Step>
+    <!--Step>
+        <Name>RF-Err400-BadRequest</Name>
+        <Condition>request_result!="success" and request_result!='' </Condition>
+    </Step-->
+    <Step>
+        <Name>RF-Err400-ChallengePending</Name>
+        <Condition>(request_result="success") and (TMXService matches "Query") and 
+                   (finalReviewStatus != '' and (finalReviewStatus = "reject" or finalReviewStatus = "review"))
+        </Condition>
+    </Step>
+    <Step>
+        <Name>RF-Err400-ChallengePending</Name>
+        <Condition>(request_result="success") and (TMXService matches "Query") and 
+                   ((finalReviewStatus = '' or finalReviewStatus = undefined) and (reviewStatus = "reject" or reviewStatus = "review" or reviewStatus = undefined or reviewStatus = ''))
+        </Condition>
+    </Step>
+    <Step>
+        <Name>RF-Err400-ProfileAssessmentFail</Name>
+        <Condition>(request_result="success") and (TMXService = "SessionQuery") and (reviewStatus = "reject" or reviewStatus = undefined or reviewStatus = '')</Condition>
+    </Step>
+    <Step>
+        <Name>SC-OktaFactorsList</Name>
+        <Condition>(request_result="success") and (TMXService = "SessionQuery") and (reviewStatus="review")</Condition>
+    </Step>
+    <Step>
+        <Name>JS-CreateMFAResponse</Name>
+        <Condition>(request_result="success") and (TMXService = "SessionQuery") and (reviewStatus="review")</Condition>
+    </Step>
+    <Step>
+        <Name>RF-MFAResponse</Name>
+        <Condition>(request_result="success") and (TMXService = "SessionQuery") and (reviewStatus="review")</Condition>
+    </Step>
+</SharedFlow>

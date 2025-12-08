@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="1" name="EK-Logging">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1757255580758</CreatedAt>
+    <CreatedBy>sridhara.k@apiwiz.com</CreatedBy>
+    <Description>Prepared Logs messages for CSOC RBAAuditing CLE etc</Description>
+    <DisplayName>EK-Logging</DisplayName>
+    <LastModifiedAt>1757255580758</LastModifiedAt>
+    <LastModifiedBy>sridhara.k@apiwiz.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:94d2dd3f7228d4361b77bfaffb18ca117be478b08877a16f0d4377b5028a83a4458bd64b1f7a729ec1f2cabb47fc0d08867c35171c2542a42b38cc10a895387b:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>JS-PrepareLogMessage</Policy>
+        <Policy>KVM_LogConfigs</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-PrepareLogMessage.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

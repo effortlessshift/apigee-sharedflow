@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-SetLogVars-Preproxy" version="SHA-512:6bf32faf9692432999a63f25e337215f7aa7c801e8060bd0e531ed6a3784d4c3392614f2e4f1413039abcca47c50770068762713bae3deba3388453b75849eb9"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:fdd09beb94e0f5faceb5afeb3ea7e9dcf2b33d5e43eb98b62784c2a0ff0f38dab4823f04f4f2461e65b1ca722cca1265faa31b46e1c93abede0b1bbc0f5284e9"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

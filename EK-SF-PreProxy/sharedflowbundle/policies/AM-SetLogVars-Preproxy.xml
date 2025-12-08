@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="true" enabled="true" name="AM-SetLogVars-Preproxy">
+    <DisplayName>AM-SetLogVars-Preproxy</DisplayName>
+    <AssignVariable>
+        <Name>headerAccept</Name>
+        <Ref>request.header.Accept</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>headerAcceptEncoding</Name>
+        <Ref>request.header.Accept-Encoding</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>headerOrgHost</Name>
+        <Ref>request.header.x-ek-orghost</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>headerXfwdFor</Name>
+        <Ref>request.header.X-Forwarded-For</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>headerXfwdPort</Name>
+        <Ref>request.header.X-Forwarded-Port</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>headerProxyUrl</Name>
+        <Ref>proxy.url</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>appProduct.AppName</Name>
+        <Ref>app.DisplayName</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache name="PC-PredictApiToken">
+    <DisplayName>PC-PredictApiToken</DisplayName>
+    <CacheResource>Predict-OnO-OauthCache</CacheResource>
+    <Source>cache.apiAccessToken</Source>
+    <Scope>Application</Scope>
+    <CacheKey>
+        <KeyFragment ref="AppName"/>
+    </CacheKey>
+    <ExpirySettings>
+        <TimeoutInSec>1700</TimeoutInSec>
+    </ExpirySettings>
+</PopulateCache>

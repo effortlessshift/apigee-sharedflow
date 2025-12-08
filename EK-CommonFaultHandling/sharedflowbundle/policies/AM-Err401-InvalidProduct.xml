@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Err401-InvalidProduct">
+    <DisplayName>AM-Err401-InvalidProduct</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>flow.errorCode</Name>
+        <Value>401</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSystem</Name>
+        <Value>001</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSuffix</Name>
+        <Value>003</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSummary</Name>
+        <Value>Unauthorized</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorMessage</Name>
+        <Value>Insufficient privilege to access this API. Please contact the API support team.</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.dynamicErrorMessage</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.statusCode</Name>
+        <Value>401</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.reasonPhrase</Name>
+        <Value>Unauthorized</Value>
+    </AssignVariable>
+</AssignMessage>

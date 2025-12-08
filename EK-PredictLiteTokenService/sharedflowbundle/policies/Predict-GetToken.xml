@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="Predict-GetToken">
+    <DisplayName>Predict-GetToken</DisplayName>
+    <Properties/>
+    <Request clearPayload="true">
+        <Set>
+            <Headers>
+                <Header name="Content-Type">application/x-www-form-urlencoded</Header>
+				<!--Header name="Content-Type">application/x-www-form-urlencoded</Header>
+				<Header name="Authorization">Basic {private.KVMAuthorization}</Header-->
+                <Header name="Authorization">Basic {authorization}</Header>
+                <Header name="X-Referer">{xReferer}</Header>
+            </Headers>
+            <Verb>POST</Verb>
+        </Set>
+        <Add>
+            <FormParams>
+                <FormParam name="grant_type">password</FormParam>
+                <FormParam name="password">{password}</FormParam>
+                <FormParam name="username">{username}</FormParam>
+            </FormParams>
+        </Add>
+        <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>OAuthResponse</Response>
+    <Timeout>60000</Timeout>
+    <HTTPTargetConnection>
+        <Properties>
+            <Property name="success.codes">2xx,4xx</Property>
+        </Properties>
+        <LoadBalancer>
+            <!--<Server name="OandObackend"/>-->
+            <Server name="ekf5backend"/>
+        </LoadBalancer>
+        <!--<Path>/api/iam/oauth/token</Path>-->
+        <Path>/{environment.name}/skycargo/api/uaa/oauth/token</Path>
+    </HTTPTargetConnection>
+</ServiceCallout>

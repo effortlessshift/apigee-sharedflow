@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-AddCORFormParam">
+    <DisplayName>AM-AddCORFormParam</DisplayName>
+    <Properties/>
+    <Copy source="TMXRequest"/>
+    <Add>
+        <FormParams>
+            <FormParam name="account_address_country">{countryOfResidence}</FormParam>
+        </FormParams>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">TMXRequest</AssignTo>
+</AssignMessage>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Err400-BadRequest">
+    <DisplayName>RF-Err400-BadRequest</DisplayName>
+</RaiseFault>

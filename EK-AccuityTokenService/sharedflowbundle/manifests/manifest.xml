@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-SetFlowVariable" version="SHA-512:cb3779bd8fdb912acf0546fdb3cbfbd08c455ee240cf6fae44bc69597ca5e982be6109c5edd31e7d2417d0c1e8ce72272fb7b51e2c268ee07e1970f938cdf6b3"/>
+        <VersionInfo resourceName="Accuity-GetToken" version="SHA-512:bc944042332a57a89a307a6409d1b2ed9f7278a7e795e62ca006b6ebdc95bba1450e051186f13840ba24cb4170cd891a7cbd827ef542061bb8a04b55f78dce3b"/>
+        <VersionInfo resourceName="EV-AccuityAuthResponse" version="SHA-512:e235b234de09e0343050c2cffe3bfee1c3a7c7bc209ad325192742e30fc0d043bb1e45e26934f08d8c7f3ee9877df0e04612aaa14c3f3154dd6a2f96d5bee3d0"/>
+        <VersionInfo resourceName="KVM-Accuity" version="SHA-512:a62b8254c07a162e6cc2d6cee32092d11c51465c6d561da875065832104534e89a00b5c529cb42c51ab7fb731c1cb1c3af7314b56448f3aa10497933769adfe0"/>
+        <VersionInfo resourceName="LC-OAuthToken" version="SHA-512:5d3b9326264d5ac49a770b2047059aaba38258b5eca7cf2951abd720ea9c6012ebaa5328f2917e1273659e2a264ec590eb9dc2cabb0339ba68bb365f48887de3"/>
+        <VersionInfo resourceName="PC-AccuityApiToken" version="SHA-512:5e42f42e1a3e741ee9c6a3f9c68efb0811cf874faf51768c4431deaae4a70570042dd39ba6bcc1445c15386a85543e4c21d705c0def9315f48f13d09321b6482"/>
+        <VersionInfo resourceName="RF-Err404-TargetNotFound" version="SHA-512:d48401d412a01e54e5030c5e71d1188976a9a05c81c9a3391e8186cd39fa25c5b866ae6d8168045cf2d3407ab9e6c02b5916b8d3ae406cb45e82dfbb675e1b96"/>
+        <VersionInfo resourceName="SC-RequestID" version="SHA-512:4e02f7c62eb011b7649ccf41d931f738b1432f82fa6f67541194dec54e0847d526f621829bd4ad54802cd3959ad051e2a9522d5bb1af70cbdc4a112a9d2a21d1"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-TokenExtraction.js" version="SHA-512:877990894e40a67f58bea3b888bd922a9e1ec1e6eb8983bc3fd60ff5cb04e4786552b302738300d1b1563466477c287ef7fbd2c015275aab8086de062322bf8d"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:0e363b03214b6fd197a22289b3f2d73e89cbd64f1e188b9cf0bf1e9ebe572b329ff6b8fdb10eee4f7cbed40d42d92e1f558824ad65b83dab31915b2c15839922"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

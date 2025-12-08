@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-AddCORFormParam" version="SHA-512:feafd9b38642db4f03add86041e06175982a4491e8596b938930b481f35e9987472015d1db3f0446bbdb0d08e13c3329036435fbe451d5aa4ac04835cccf727b"/>
+        <VersionInfo resourceName="AM-CreateRequest-RBAAudit" version="SHA-512:63746eb8a7311f6dd36ae19918abb1832a39885fe04e43a217ba35a2fc625eed0542ebe6cd9d4f5ff3a60fede2a6624844808228d7edcb7757ab852107a06e76"/>
+        <VersionInfo resourceName="AM-RBARetrieveDynamicProf" version="SHA-512:e9721430141bcd81250af9040b8fa53e6ab67f5ccaa68c1d6b0eb91b30ab60a9af943551a1dc5af0713c6199f30da5ab9402986af72e983ecf14a4ac38920af8"/>
+        <VersionInfo resourceName="EV-ExtractResponse-ProfileDynamicSumm" version="SHA-512:6155ad2ee203cc01d21b3b9a160f4d66b0dcbe871292fd2a3541cdb5c71a4333ab4603d1b304a8cc5c9d009542affd9a2a5e104947e1c3584efcda410812d377"/>
+        <VersionInfo resourceName="EV-ExtractResponse-SearchTMX" version="SHA-512:6e1475d9bf51f43b3e79ef0944c60a3f3d41895908b67ac69582c49832a70e34d699b4070e88bb59eab837beb96049e4360c44d5d6133e90361f13cdb4648842"/>
+        <VersionInfo resourceName="JS-CreateMFAResponse" version="SHA-512:11b5257ef65f4eee04d02384fd064b48172a47296242ef96ea02cd1b0f25efa876eb917ed920976839a0eaba1890458ffcbd441cd9c79c57216addf4476363c7"/>
+        <VersionInfo resourceName="JS-CreateRBARequest" version="SHA-512:b553436827cd09e2e807773c9a9c395ad66087f2a4c1d3041fe1ed28385caaabe9fec9b71eb0ca05b97ab54c3871c74f5378099580e1428a9ddcc6e10455ef50"/>
+        <VersionInfo resourceName="KVM-TibcoConstants" version="SHA-512:c524e7341d3d6d9271a4b115bd127826b3525896f7ca395d33349cbc7d29817c691c68cef0ad3a1fe8d85307a8c4beaf49f9451e0febb48cdc4fb4b0537a1dbd"/>
+        <VersionInfo resourceName="RF-Err400-BadRequest" version="SHA-512:409d78f583e59c96337e99e56043b5a61695f00f4153bfe8912b0162a8f5b1f716b85e8bf25d8010e01b04c68ec3892db3df574a41140c85056955362ba93184"/>
+        <VersionInfo resourceName="RF-Err400-ChallengePending" version="SHA-512:425dae7caa53b5168ba6c10655a5cddb266b50b19a3c094b1ec4fe26a107f77be6fc259df1789b4c30ddb263ccf4094bf66653236f74e8026a3c8a208e623e33"/>
+        <VersionInfo resourceName="RF-Err400-ProfileAssessmentFail" version="SHA-512:42af72cd8a6ea00506e8ee80eecea0b223fadbd56b22354832c0c70fdda8a238d41246be667f837d513e55fca6ed67d6d8da6425c0bfba6aedeab472efe2c0ab"/>
+        <VersionInfo resourceName="RF-MFAResponse" version="SHA-512:c9ed3d3ba0d5d248842d0be4f56f2891d3d5ba4abc2cbb5da74ddbe1605564d16caf6b70af2c0c609afc4bf1c1e6080b28a24490fb9e775b9ab2346e024232b8"/>
+        <VersionInfo resourceName="SC-OktaFactorsList" version="SHA-512:54edc3cea70b48ac0bca224528a9ea18ef31b7d7a8a61b276fcf697e7a2e2439093fa33dec4729d268c2e889e4014530c466845c6b1c1f5611c47a0c460af769"/>
+        <VersionInfo resourceName="SC-RBARetrieveDynamicProfileRequest" version="SHA-512:d10cff465147ca9c7fdf10a7c17ab58a1dc988ba8fecbab569dae81d65b7440ad4de39eca429624bd8e0083ba649cf3477597f5378a24804c035cdcd7b81d64b"/>
+        <VersionInfo resourceName="SC-TMXService" version="SHA-512:c186ae00d6b4b6aed16fbc50d1345d823f9a24101c806faa9342f38d0c17edf6c0f0253c91f7ac8838ffd3201726add2a9f454f44767d4845e0b357b962b1bef"/>
+        <VersionInfo resourceName="SC-TibcoRBAAuditService" version="SHA-512:0044b22c6858e959e85559428984a5462ff51ee59503e9134f5ea06c5422968859f1f571f40aa242d021c03011321e78bc2236040b34f64bea453530f48c904a"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-CreateMFAResponse.js" version="SHA-512:2cae9650990962af0c7707ac0f17d83509c433a7c2353a9f4d663caba0f3bd8fd4b1a3bd0db8ef7ec3c5a8f35ca44969773efe838e06ce5aa8014169398fa7d4"/>
+        <VersionInfo resourceName="jsc://JS-CreateRBARequest.js" version="SHA-512:50718f8a85c5dbe2454c29277ff4307217cb9397904a26150fe390b45bb93a0d71117b1de5ab2c9b7c5717069cb298f461493abd7198a0669efe17f711a29fea"/>
+        <VersionInfo resourceName="jsc://PrepareLogMessage.js" version="SHA-512:ab32a4cd9c5857b2c8f19dfee718e6d0e9ef30907ee69ba07fbfa79a62b8eb72e5581a7fc958cee32dbf25dff033e7b212db48293a376d3c2a270796a8314cc4"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:9e3bd7ef7b910ca86c58cc4e9f108865796fcfa75943a705e620162ba466fe0e086ba659b002abba3eb39f1371134928a37d122e1a89931186a839a2edc5a952"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

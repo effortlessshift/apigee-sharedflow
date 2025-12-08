@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AccessControl" version="SHA-512:e65ae9ed93962a0d0bd89e08b2999306f6b87fab39db38a81abf4e7b02f60a5cf2fdc4b993428e8aedd4e6800da5e57b445cd1ea97c1666252f81c7c0a09d417"/>
+        <VersionInfo resourceName="RegularExpressionProtection" version="SHA-512:c5a90b4376a116c4101eecfb2a9c83eea8fae758a706fc24e0538459cac3e5a2cad432a6ef587394509806fd132be6be9c98b0d3b904a12d517986f9eaf60878"/>
+        <VersionInfo resourceName="SC-Splunk" version="SHA-512:ba40ac52661b8e60b0480221d646a04cd87db9e8e05f583c4b9b9cb959c16adc8cd257a48a775f8802d3e3229cbdbb3c6348bdfc16b9b367c426db374aa2d4e9"/>
+        <VersionInfo resourceName="XMLThreatProtection" version="SHA-512:8308d05255384503f7d2eda3474ac7cb2ccb905f6752f547d93153806fdb817caa7107b70658b3028de846e9ef1c43335c7fae084c698ef2a65e954959701e95"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:23247ad29d4e7ef0966c2ccbf5f4fc4d265f5e7fe6bd292d2ea572601baff9d7b7e6f1abc7059443c45a23e53c6ea3527093809c38804812a8348945ac6705f4"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

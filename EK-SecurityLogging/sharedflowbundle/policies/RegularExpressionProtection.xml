@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="RegularExpressionProtection">
+    <DisplayName>RegularExpressionProtection</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <JSONPath>
+            <Expression>$.*</Expression>
+            <Pattern>[\s]*(?i)((delete)|(drop\s*table)|(insert)|(shutdown))</Pattern>
+        </JSONPath>
+    </JSONPayload>
+    <Source>request</Source>
+</RegularExpressionProtection>

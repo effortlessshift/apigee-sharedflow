@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-PredictLite" mapIdentifier="KVM_PredictLite">
+    <DisplayName>KVM-PredictLite</DisplayName>
+    <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
+    <Get assignTo="private.KVMAuthorization" index="1">
+        <Key>
+            <Parameter>Authorization</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.KVMX-Referer" index="1">
+        <Key>
+            <Parameter>X-Referer</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

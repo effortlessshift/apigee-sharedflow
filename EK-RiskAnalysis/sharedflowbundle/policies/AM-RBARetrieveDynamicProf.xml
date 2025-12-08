@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-RBARetrieveDynamicProf">
+    <DisplayName>AM-RBARetrieveDynamicProf</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="userId">{channelName}</Header>
+            <!--Header name="Password">{private.KVMCrisPassword}</Header-->
+            <Header name="applicationCode">{channelName}</Header>
+            <Header name="ClientTransactionID">{sourceMessageId}</Header>
+            <Header name="Content-Type">application/json</Header>
+            <Header name="apiKey">{CRISAPIKey}</Header>
+            <Header name="Accept">application/json</Header>
+        </Headers>
+        <Payload contentType="application/json">
+        {
+	"rbaDynamicProfileDataRequest": {
+			"ssoId": "{extractedSsoId}"
+	}
+}</Payload>
+        <Verb>POST</Verb>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignVariable>
+        <Name>eventType</Name>
+        <Value>RBADynamicProf</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">RBARetrieveDynamicProfileRequest</AssignTo>
+</AssignMessage>

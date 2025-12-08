@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="true" enabled="true" name="AM-CreateRequest-RBAAudit">
+    <DisplayName>AM-CreateRequest-RBAAudit</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>flow.system</Name>
+        <Value>003</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>eventType</Name>
+        <Value>RBAAudit</Value>
+    </AssignVariable>
+    <Set>
+        <Headers>
+            <Header name="UserId">{channelName}</Header>
+            <Header name="ApplicationCode">{channelName}</Header>
+            <Header name="ClientTransactionID">{sourceMessageId}</Header>
+            <Header name="Content-Type">application/json</Header>
+        </Headers>
+        <Payload contentType="application/json">
+        {RBALogContent}
+        </Payload>
+        <Verb>POST</Verb>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">RBAAuditRequest</AssignTo>
+</AssignMessage>

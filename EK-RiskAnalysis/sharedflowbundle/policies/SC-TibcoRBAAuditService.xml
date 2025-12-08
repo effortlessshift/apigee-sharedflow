@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="true" enabled="true" name="SC-TibcoRBAAuditService">
+    <DisplayName>SC-TibcoRBAAuditService</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="RBAAuditRequest">
+        <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>RBAAuditResponse</Response>
+    <Timeout>60000</Timeout>
+    <HTTPTargetConnection>
+        <LoadBalancer>
+            <Server name="ekf5backend"/>
+        </LoadBalancer>
+        <Path>{environment.name}/tibco/rba/audit/log</Path>
+    </HTTPTargetConnection>
+</ServiceCallout>

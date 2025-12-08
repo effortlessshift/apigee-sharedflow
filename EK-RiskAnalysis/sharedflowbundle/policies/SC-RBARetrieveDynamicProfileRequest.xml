@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-RBARetrieveDynamicProfileRequest">
+    <DisplayName>SC-RBARetrieveDynamicProfile</DisplayName>
+    <Properties/>
+    <Request variable="RBARetrieveDynamicProfileRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>RBARetrieveDynamicProfileResp</Response>
+    <Timeout>60000</Timeout>
+    <HTTPTargetConnection>
+        <Properties>
+            <Property name="success.codes">2xx,4xx,5xx</Property>
+        </Properties>
+        <LoadBalancer>
+            <Server name="ekbackend"/>
+        </LoadBalancer>
+        <Path>{environment.name}/rest/RBADynamicProfile/RetrieveDynamicProfile</Path>
+    </HTTPTargetConnection>
+</ServiceCallout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>AM-Err401-InvalidToken</Name>
+        <Condition>
+           response.status.code = 401
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err404-InvalidResource</Name>
+        <Condition>
+           response.status.code = 404
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err400-BadRequest</Name>
+        <Condition>
+           response.status.code = 400
+        </Condition>
+    </Step>
+    <Step>
+        <Name>AM-Err500-OtherHTTPStatusCode</Name>
+        <Condition>
+           response.status.code != 400 and   response.status.code != 401 and  response.status.code != 404
+        </Condition>
+    </Step>
+</SharedFlow>

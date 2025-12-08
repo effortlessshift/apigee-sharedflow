@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AM-Err429-SpikeArrest">
+    <DisplayName>AM-Err429-SpikeArrest</DisplayName>
+    <AssignVariable>
+        <Name>flow.errorCode</Name>
+        <Value>429</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSystem</Name>
+        <Value>001</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSuffix</Name>
+        <Value>001</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorSummary</Name>
+        <Value>Spike arrest violation</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.errorMessage</Name>
+        <Value>Exceeded the number of hits allowed</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.dynamicErrorMessage</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.statusCode</Name>
+        <Value>429</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.reasonPhrase</Name>
+        <Value>Too Many Hits</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

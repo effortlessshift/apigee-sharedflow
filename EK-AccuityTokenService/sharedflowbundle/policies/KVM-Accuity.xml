@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-Accuity" mapIdentifier="KVM_Accuity">
+    <DisplayName>KVM-Accuity</DisplayName>
+    <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
+    <Get assignTo="private.KVMAuthorization" index="1">
+        <Key>
+            <Parameter>Authorization</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

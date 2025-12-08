@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-ExtractResponse-SearchTMX">
+    <DisplayName>EV-ExtractResponse-SearchTMX</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="reviewStatus">
+            <JSONPath>$.review_status</JSONPath>
+        </Variable>
+        <Variable name="finalReviewStatus">
+            <JSONPath>$.final_review_status</JSONPath>
+        </Variable>
+        <Variable name="policy_score">
+            <JSONPath>$.policy_score</JSONPath>
+        </Variable>
+        <Variable name="challengeRefCode">
+            <JSONPath>$.request_id</JSONPath>
+        </Variable>
+        <Variable name="request_result">
+            <JSONPath>$.request_result</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">TMXResponse</Source>
+</ExtractVariables>

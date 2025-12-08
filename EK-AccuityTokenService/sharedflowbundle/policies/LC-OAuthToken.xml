@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache async="false" continueOnError="false" enabled="true" name="LC-OAuthToken">
+    <DisplayName>LC-OAuthToken</DisplayName>
+    <CacheResource>Accuity-OauthCache</CacheResource>
+    <AssignTo>cache.apiAccessToken</AssignTo>
+    <Scope>Application</Scope>
+    <CacheKey>
+        <KeyFragment ref="AppName"/>
+    </CacheKey>
+</LookupCache>

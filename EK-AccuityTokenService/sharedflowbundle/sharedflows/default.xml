@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>AM-SetFlowVariable</Name>
+    </Step>
+    <!--Step>
+        <Name>KVM-PredictLite</Name>
+    </Step-->
+    <Step>
+        <Name>SC-RequestID</Name>
+    </Step>
+    <Step>
+        <Name>KVM-Accuity</Name>
+    </Step>
+    <Step>
+        <Name>LC-OAuthToken</Name>
+    </Step>
+    <Step>
+        <Name>Accuity-GetToken</Name>
+        <Condition>cache.apiAccessToken = null or cache.apiAccessToken = '' or PreditErrorStatusCode = 401</Condition>
+    </Step>
+    <Step>
+        <Name>RF-Err404-TargetNotFound</Name>
+        <Condition>OAuthResponse.status.code GreaterThanOrEquals 299</Condition>
+    </Step>
+    <Step>
+        <Name>EV-AccuityAuthResponse</Name>
+        <Condition>OAuthResponse != ''</Condition>
+    </Step>
+    <Step>
+        <Name>PC-AccuityApiToken</Name>
+        <Condition>OAuthResponse != ''</Condition>
+    </Step>
+</SharedFlow>
